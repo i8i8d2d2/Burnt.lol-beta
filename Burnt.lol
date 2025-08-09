@@ -14,14 +14,19 @@ local Walkspeed = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
 local UltraInstinct = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local BringAll = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
 local TPtoSomeone = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local ToggleGravity = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
 local InfJump = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ClicktoTeleport = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
+local Float = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local FakeChat = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
 
 --Properties:
 
@@ -115,23 +120,6 @@ UltraInstinct.TextWrapped = true
 
 UICorner_4.Parent = UltraInstinct
 
-BringAll.Name = "BringAll"
-BringAll.Parent = Frame
-BringAll.BackgroundColor3 = Color3.fromRGB(29, 29, 32)
-BringAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
-BringAll.BorderSizePixel = 0
-BringAll.Position = UDim2.new(0.0235546045, 0, 0.336683422, 0)
-BringAll.Size = UDim2.new(0, 200, 0, 50)
-BringAll.Font = Enum.Font.Unknown
-BringAll.Text = "Bring All (Buggy)"
-BringAll.TextColor3 = Color3.fromRGB(252, 197, 116)
-BringAll.TextScaled = true
-BringAll.TextSize = 14.000
-BringAll.TextStrokeColor3 = Color3.fromRGB(252, 197, 116)
-BringAll.TextWrapped = true
-
-UICorner_5.Parent = BringAll
-
 TPtoSomeone.Name = "TPtoSomeone"
 TPtoSomeone.Parent = Frame
 TPtoSomeone.BackgroundColor3 = Color3.fromRGB(29, 29, 32)
@@ -147,24 +135,24 @@ TPtoSomeone.TextScaled = true
 TPtoSomeone.TextSize = 14.000
 TPtoSomeone.TextWrapped = true
 
-UICorner_6.Parent = TPtoSomeone
+UICorner_5.Parent = TPtoSomeone
 
-ToggleGravity.Name = "ToggleGravity"
-ToggleGravity.Parent = Frame
-ToggleGravity.BackgroundColor3 = Color3.fromRGB(29, 29, 32)
-ToggleGravity.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ToggleGravity.BorderSizePixel = 0
-ToggleGravity.Position = UDim2.new(0.0235546045, 0, 0.443886161, 0)
-ToggleGravity.Size = UDim2.new(0, 200, 0, 50)
-ToggleGravity.Font = Enum.Font.Unknown
-ToggleGravity.Text = "Toggle Gravity"
-ToggleGravity.TextColor3 = Color3.fromRGB(252, 197, 116)
-ToggleGravity.TextScaled = true
-ToggleGravity.TextSize = 14.000
-ToggleGravity.TextStrokeColor3 = Color3.fromRGB(252, 197, 116)
-ToggleGravity.TextWrapped = true
+ESP.Name = "ESP"
+ESP.Parent = Frame
+ESP.BackgroundColor3 = Color3.fromRGB(29, 29, 32)
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.0235546045, 0, 0.443886161, 0)
+ESP.Size = UDim2.new(0, 200, 0, 50)
+ESP.Font = Enum.Font.Unknown
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(252, 197, 116)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextStrokeColor3 = Color3.fromRGB(252, 197, 116)
+ESP.TextWrapped = true
 
-UICorner_7.Parent = ToggleGravity
+UICorner_6.Parent = ESP
 
 InfJump.Name = "InfJump"
 InfJump.Parent = Frame
@@ -181,11 +169,77 @@ InfJump.TextSize = 14.000
 InfJump.TextStrokeColor3 = Color3.fromRGB(252, 197, 116)
 InfJump.TextWrapped = true
 
-UICorner_8.Parent = InfJump
+UICorner_7.Parent = InfJump
+
+ClicktoTeleport.Name = "ClicktoTeleport"
+ClicktoTeleport.Parent = Frame
+ClicktoTeleport.BackgroundColor3 = Color3.fromRGB(29, 29, 32)
+ClicktoTeleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClicktoTeleport.BorderSizePixel = 0
+ClicktoTeleport.Position = UDim2.new(0.0235546045, 0, 0.336683422, 0)
+ClicktoTeleport.Size = UDim2.new(0, 200, 0, 50)
+ClicktoTeleport.Font = Enum.Font.Unknown
+ClicktoTeleport.Text = "Click to Teleport"
+ClicktoTeleport.TextColor3 = Color3.fromRGB(252, 197, 116)
+ClicktoTeleport.TextScaled = true
+ClicktoTeleport.TextSize = 14.000
+ClicktoTeleport.TextStrokeColor3 = Color3.fromRGB(252, 197, 116)
+ClicktoTeleport.TextWrapped = true
+
+UICorner_8.Parent = ClicktoTeleport
+
+Float.Name = "Float"
+Float.Parent = Frame
+Float.BackgroundColor3 = Color3.fromRGB(29, 29, 32)
+Float.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Float.BorderSizePixel = 0
+Float.Position = UDim2.new(0.531049252, 0, 0.443886161, 0)
+Float.Size = UDim2.new(0, 200, 0, 50)
+Float.Font = Enum.Font.Unknown
+Float.Text = "Float"
+Float.TextColor3 = Color3.fromRGB(252, 197, 116)
+Float.TextScaled = true
+Float.TextSize = 14.000
+Float.TextStrokeColor3 = Color3.fromRGB(252, 197, 116)
+Float.TextWrapped = true
+
+UICorner_9.Parent = Float
+
+FakeChat.Name = "FakeChat"
+FakeChat.Parent = Frame
+FakeChat.BackgroundColor3 = Color3.fromRGB(29, 29, 32)
+FakeChat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FakeChat.BorderSizePixel = 0
+FakeChat.Position = UDim2.new(0.531049252, 0, 0.547738671, 0)
+FakeChat.Size = UDim2.new(0, 200, 0, 50)
+FakeChat.Font = Enum.Font.Unknown
+FakeChat.PlaceholderText = "Fake Chat Or Sum (Press Enter)"
+FakeChat.Text = ""
+FakeChat.TextColor3 = Color3.fromRGB(252, 197, 116)
+FakeChat.TextScaled = true
+FakeChat.TextSize = 14.000
+FakeChat.TextWrapped = true
+
+UICorner_10.Parent = FakeChat
+
+Version.Name = "Version"
+Version.Parent = Frame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0, 0, 0.969849229, 0)
+Version.Size = UDim2.new(0, 75, 0, 18)
+Version.Font = Enum.Font.Unknown
+Version.Text = "v1.0.9 (Beta)"
+Version.TextColor3 = Color3.fromRGB(252, 197, 116)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextWrapped = true
 
 -- Scripts:
 
-local function LUJJ_fake_script() -- Frame.UIDrag 
+local function SQXIK_fake_script() -- Frame.UIDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -226,8 +280,8 @@ local function LUJJ_fake_script() -- Frame.UIDrag
 		end
 	end)
 end
-coroutine.wrap(LUJJ_fake_script)()
-local function BGBNYJK_fake_script() -- Fly.LocalScript 
+coroutine.wrap(SQXIK_fake_script)()
+local function QXFWMLZ_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	local button = script.Parent
@@ -324,8 +378,8 @@ local function BGBNYJK_fake_script() -- Fly.LocalScript
 	end)
 	
 end
-coroutine.wrap(BGBNYJK_fake_script)()
-local function PGHIEFF_fake_script() -- Walkspeed.LocalScript 
+coroutine.wrap(QXFWMLZ_fake_script)()
+local function KVQB_fake_script() -- Walkspeed.LocalScript 
 	local script = Instance.new('LocalScript', Walkspeed)
 
 	local textbox = script.Parent
@@ -347,8 +401,8 @@ local function PGHIEFF_fake_script() -- Walkspeed.LocalScript
 	end)
 	
 end
-coroutine.wrap(PGHIEFF_fake_script)()
-local function TTGKR_fake_script() -- UltraInstinct.LocalScript 
+coroutine.wrap(KVQB_fake_script)()
+local function FCKZ_fake_script() -- UltraInstinct.LocalScript 
 	local script = Instance.new('LocalScript', UltraInstinct)
 
 	local player = game.Players.LocalPlayer
@@ -399,35 +453,8 @@ local function TTGKR_fake_script() -- UltraInstinct.LocalScript
 	end)
 	
 end
-coroutine.wrap(TTGKR_fake_script)()
-local function MWTT_fake_script() -- BringAll.LocalScript 
-	local script = Instance.new('LocalScript', BringAll)
-
-	local player = game.Players.LocalPlayer
-	local UserInputService = game:GetService("UserInputService")
-	
-	local infiniteJumpEnabled = false
-	local button = script.Parent
-	
-	local function onJumpRequest()
-		if infiniteJumpEnabled then
-			local character = player.Character
-			local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-			if humanoid then
-				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-			end
-		end
-	end
-	
-	button.MouseButton1Click:Connect(function()
-		infiniteJumpEnabled = not infiniteJumpEnabled
-	end)
-	
-	UserInputService.JumpRequest:Connect(onJumpRequest)
-	
-end
-coroutine.wrap(MWTT_fake_script)()
-local function ALFR_fake_script() -- TPtoSomeone.LocalScript 
+coroutine.wrap(FCKZ_fake_script)()
+local function RNNWGUE_fake_script() -- TPtoSomeone.LocalScript 
 	local script = Instance.new('LocalScript', TPtoSomeone)
 
 	local Players = game:GetService("Players")
@@ -450,14 +477,105 @@ local function ALFR_fake_script() -- TPtoSomeone.LocalScript
 	end)
 	
 end
-coroutine.wrap(ALFR_fake_script)()
-local function TUPET_fake_script() -- ToggleGravity.LocalScript 
-	local script = Instance.new('LocalScript', ToggleGravity)
+coroutine.wrap(RNNWGUE_fake_script)()
+local function QSCWV_fake_script() -- ESP.LocalScript 
+	local script = Instance.new('LocalScript', ESP)
 
+	local Players = game:GetService("Players")
+	local button = script.Parent
+	
+	local espEnabled = false
+	local espObjects = {}
+	
+	local function getRandomColor()
+		return Color3.fromHSV(math.random(), 1, 1)
+	end
+	
+	local function createESP(player)
+		if not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then return end
+	
+		local highlight = Instance.new("Highlight")
+		highlight.Adornee = player.Character
+		highlight.Name = "ESP_Highlight"
+		highlight.Parent = player.Character
+	
+		if player == Players.LocalPlayer then
+			highlight.FillColor = Color3.fromRGB(0, 150, 255)
+			highlight.OutlineColor = Color3.fromRGB(0, 150, 255)
+		else
+			local randomColor = getRandomColor()
+			highlight.FillColor = randomColor
+			highlight.OutlineColor = randomColor
+		end
+	
+		local billboardGui = Instance.new("BillboardGui")
+		billboardGui.Name = "ESP_NameTag"
+		billboardGui.Adornee = player.Character:FindFirstChild("Head") or player.Character:FindFirstChild("HumanoidRootPart")
+		billboardGui.Size = UDim2.new(0, 100, 0, 25)
+		billboardGui.StudsOffset = Vector3.new(0, 2.5, 0)
+		billboardGui.AlwaysOnTop = true
+		billboardGui.Parent = player.Character
+	
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Size = UDim2.new(1, 0, 1, 0)
+		textLabel.BackgroundTransparency = 1
+		textLabel.TextColor3 = Color3.new(1, 1, 1)
+		textLabel.TextStrokeTransparency = 0
+		textLabel.Text = player.Name
+		textLabel.Font = Enum.Font.SourceSansBold
+		textLabel.TextScaled = true
+		textLabel.Parent = billboardGui
+	
+		espObjects[player] = {highlight = highlight, nameTag = billboardGui}
+	end
+	
+	local function removeESP(player)
+		if espObjects[player] then
+			if espObjects[player].highlight then espObjects[player].highlight:Destroy() end
+			if espObjects[player].nameTag then espObjects[player].nameTag:Destroy() end
+			espObjects[player] = nil
+		end
+	end
+	
+	local function enableESP()
+		espEnabled = true
+	
+		for _, player in pairs(Players:GetPlayers()) do
+			if player.Character then
+				createESP(player)
+			end
+			player.CharacterAdded:Connect(function()
+				if espEnabled then
+					createESP(player)
+				end
+			end)
+			player.CharacterRemoving:Connect(function()
+				removeESP(player)
+			end)
+		end
+	end
+	
+	local function disableESP()
+		espEnabled = false
+	
+		for player, objects in pairs(espObjects) do
+			if objects.highlight then objects.highlight:Destroy() end
+			if objects.nameTag then objects.nameTag:Destroy() end
+		end
+		espObjects = {}
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		if espEnabled then
+			disableESP()
+		else
+			enableESP()
+		end
+	end)
 	
 end
-coroutine.wrap(TUPET_fake_script)()
-local function GQHND_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(QSCWV_fake_script)()
+local function DQAXMSH_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	local player = game.Players.LocalPlayer
@@ -483,4 +601,129 @@ local function GQHND_fake_script() -- InfJump.LocalScript
 	UserInputService.JumpRequest:Connect(onJumpRequest)
 	
 end
-coroutine.wrap(GQHND_fake_script)()
+coroutine.wrap(DQAXMSH_fake_script)()
+local function RCVF_fake_script() -- ClicktoTeleport.LocalScript 
+	local script = Instance.new('LocalScript', ClicktoTeleport)
+
+	local player = game.Players.LocalPlayer
+	local teleportEnabled = false
+	local teleportButton = script.Parent
+	
+	local function teleportToClickPosition(position)
+		if teleportEnabled then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(position))
+		end
+	end
+	
+	teleportButton.MouseButton1Click:Connect(function()
+		teleportEnabled = not teleportEnabled
+	end)
+	
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			if teleportEnabled then
+				local targetPosition = player:GetMouse().Hit.p
+				teleportToClickPosition(targetPosition)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(RCVF_fake_script)()
+local function KNWHT_fake_script() -- Float.LocalScript 
+	local script = Instance.new('LocalScript', Float)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local player = Players.LocalPlayer
+	
+	local button = script.Parent
+	
+	local floatEnabled = false
+	local bodyVelocity = nil
+	local humanoidRootPart = nil
+	local floorPart = nil
+	
+	local function onCharacterAdded(character)
+		humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	end
+	
+	if player.Character then
+		onCharacterAdded(player.Character)
+	end
+	
+	player.CharacterAdded:Connect(onCharacterAdded)
+	
+	local function createFloorPart()
+		floorPart = Instance.new("Part")
+		floorPart.Size = Vector3.new(6, 0.2, 6)
+		floorPart.Transparency = 1
+		floorPart.Anchored = true
+		floorPart.CanCollide = true
+		floorPart.Parent = workspace
+	end
+	
+	local function enableFloat()
+		if not humanoidRootPart then return end
+		floatEnabled = true
+	
+		createFloorPart()
+	
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.MaxForce = Vector3.new(0, math.huge, 0)
+		bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+		bodyVelocity.Parent = humanoidRootPart
+	
+		RunService.Heartbeat:Connect(function()
+			if floatEnabled and bodyVelocity and humanoidRootPart and floorPart then
+				bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+				local hrpPos = humanoidRootPart.Position
+				floorPart.CFrame = CFrame.new(hrpPos.X, hrpPos.Y - 3, hrpPos.Z)
+			end
+		end)
+	end
+	
+	local function disableFloat()
+		floatEnabled = false
+		if bodyVelocity then
+			bodyVelocity:Destroy()
+			bodyVelocity = nil
+		end
+		if floorPart then
+			floorPart:Destroy()
+			floorPart = nil
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		if floatEnabled then
+			disableFloat()
+		else
+			enableFloat()
+		end
+	end)
+	
+end
+coroutine.wrap(KNWHT_fake_script)()
+local function LUIHF_fake_script() -- FakeChat.LocalScript 
+	local script = Instance.new('LocalScript', FakeChat)
+
+	local TextBox = script.Parent
+	local Players = game:GetService("Players")
+	local Chat = game:GetService("Chat")
+	local player = Players.LocalPlayer
+	
+	TextBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local message = TextBox.Text
+			if message ~= "" then
+				Chat:Chat(player.Character or player.CharacterAdded:Wait(), message, Enum.ChatColor.White)
+				TextBox.Text = ""
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LUIHF_fake_script)()
